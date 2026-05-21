@@ -1,6 +1,5 @@
-const API_KEY ="2f081f59a0349ee50a6b9b6bb7360095";
-// VITE_TMDB_API_KEY=Import.meta.env.VITE_TMDB_API_KEY
-
+// const API_KEY ="2f081f59a0349ee50a6b9b6bb7360095";
+const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
 const requests = {
   fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
